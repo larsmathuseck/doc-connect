@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import de.lars.mathuseck.docconnect.ui.info.InformationFragment
 import de.lars.mathuseck.docconnect.ui.news.NewsFragment
+import de.lars.mathuseck.docconnect.ui.questions.MainQuestionsFragment
 import de.lars.mathuseck.docconnect.ui.questions.QuestionsFragment
 import de.lars.mathuseck.docconnect.utils.FragmentStateManager
 import kotlinx.android.synthetic.main.activity_main.*
@@ -18,7 +19,7 @@ private const val POSITION_NEWS = 2
 class MainActivity : AppCompatActivity() {
 
     private lateinit var infoFragment: InformationFragment
-    private lateinit var questionFragment: QuestionsFragment
+    private lateinit var questionFragment: MainQuestionsFragment
     private lateinit var newsFragment: NewsFragment
 
     private val navigationSelectedListener =
@@ -57,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                         infoFragment
                     }
                     POSITION_QUESTIONS -> {
-                        questionFragment = QuestionsFragment.newInstance()
+                        questionFragment = MainQuestionsFragment.newInstance()
                         questionFragment
                     }
                     POSITION_NEWS -> {
@@ -73,7 +74,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         infoFragment = InformationFragment.newInstance()
-        questionFragment = QuestionsFragment.newInstance()
+        questionFragment = MainQuestionsFragment.newInstance()
         newsFragment = NewsFragment.newInstance()
 
         navigation.setOnNavigationItemSelectedListener(navigationSelectedListener)
