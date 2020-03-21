@@ -5,10 +5,21 @@
     android:id="@+id/onboardingSkillFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
 
     android:orientation="vertical"
     android:padding="32dp"
     tools:context=".ui.onboarding.OnboardingSkill">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/wavingDocsAV"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_speed="0.7"
+        app:lottie_rawRes="@raw/bed" />
 
     <TextView
         android:id="@+id/welcomeMessageTV"
@@ -21,30 +32,56 @@
         android:textColor="@color/colorSecondaryDark"
         android:textSize="32sp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="@string/name"
-        app:boxBackgroundColor="@color/white"
-        app:boxStrokeColor="@color/colorPrimary"
-        app:hintTextColor="@color/colorSecondary">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-
     <com.google.android.material.button.MaterialButton
-        style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:layout_gravity="end"
         android:layout_marginTop="32dp"
-        android:text="@string/next"
-        android:textColor="@color/white"
-        app:backgroundTint="@color/colorPrimary" />
+        android:text="Arzt"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:text="Chefarzt"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:text="Pfleger"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:text="Etwas anderes"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp" />
 
 </LinearLayout>

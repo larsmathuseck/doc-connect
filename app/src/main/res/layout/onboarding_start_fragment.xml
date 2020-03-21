@@ -5,6 +5,7 @@
     android:id="@+id/onboardingStartFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
 
     android:orientation="vertical"
     android:padding="32dp"
@@ -39,11 +40,12 @@
         android:textSize="18sp" />
 
     <com.google.android.material.button.MaterialButton
-        android:layout_marginTop="32dp"
+        android:id="@+id/startButton"
         style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
+        android:layout_marginTop="32dp"
         android:text="Weiter"
         android:textColor="@color/white"
         app:backgroundTint="@color/colorPrimary" />

@@ -5,9 +5,9 @@
     <string name="title_questions">Fragen</string>
     <string name="title_news">Neuigkeiten</string>
     <string name="hello">Hallo!</string>
-    <string name="intro_text">Wir freuen uns, dass du hier bist!\n\nWir brauchen noch ein paar Informationen, dann kann es los gehen</string>
-    <string name="whats_your_name">Wie heißt du?</string>
+    <string name="intro_text">Wir freuen uns, dass Sie hier sind!\n\nWir brauchen noch ein paar Informationen, dann kann es los gehen</string>
+    <string name="whats_your_name">Wie heißen Sie?</string>
     <string name="next">Weiter</string>
     <string name="name">Name</string>
-    <string name="whats_your_profession">Was ist dein Beruf</string>
+    <string name="whats_your_profession">Was ist Ihr Beruf?</string>
 </resources>
