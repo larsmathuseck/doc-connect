@@ -5,10 +5,20 @@
     android:id="@+id/onboardingNameFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
 
     android:orientation="vertical"
     android:padding="32dp"
     tools:context=".ui.onboarding.OnboardingName">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/wavingDocsAV"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_speed="1"
+        app:lottie_rawRes="@raw/data" />
 
     <TextView
         android:id="@+id/welcomeMessageTV"
@@ -38,6 +48,7 @@
 
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/nameButton"
         style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

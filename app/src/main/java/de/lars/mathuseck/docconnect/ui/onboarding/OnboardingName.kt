@@ -6,7 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
 import de.lars.mathuseck.docconnect.R
+import kotlinx.android.synthetic.main.onboarding_name_fragment.*
 
 class OnboardingName : Fragment() {
 
@@ -28,4 +30,12 @@ class OnboardingName : Fragment() {
         viewModel = ViewModelProvider(this).get(OnboardingNameViewModel::class.java)
     }
 
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        nameButton.setOnClickListener {
+            view.findNavController()
+                .navigate(R.id.action_onboardingName_to_onboardingSkillFragment)
+        }
+    }
 }

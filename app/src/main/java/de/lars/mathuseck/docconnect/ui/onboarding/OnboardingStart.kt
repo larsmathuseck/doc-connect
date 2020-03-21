@@ -7,7 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
 import de.lars.mathuseck.docconnect.R
+import kotlinx.android.synthetic.main.onboarding_start_fragment.*
 
 class OnboardingStart : Fragment() {
 
@@ -31,7 +33,10 @@ class OnboardingStart : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        startButton.setOnClickListener {
+            view.findNavController()
+                .navigate(R.id.action_onboardingStart_to_onboardingName)
+        }
     }
 
 }
