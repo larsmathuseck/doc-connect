@@ -2,21 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/onboardingStartFragment"
+    android:id="@+id/onboardingNameFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
     android:orientation="vertical"
     android:padding="32dp"
-    tools:context=".ui.onboarding.OnboardingStart">
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/wavingDocsAV"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/lottie_wavingdocs" />
+    tools:context=".ui.onboarding.OnboardingName">
 
     <TextView
         android:id="@+id/welcomeMessageTV"
@@ -25,26 +17,33 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/open_sans"
         android:gravity="center"
-        android:text="@string/hello"
+        android:text="@string/whats_your_name"
         android:textColor="@color/colorSecondaryDark"
         android:textSize="32sp" />
 
-    <TextView
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:text="@string/intro_text"
-        android:textColor="@color/colorSecondary"
-        android:textSize="18sp" />
+        android:hint="@string/name"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:hintTextColor="@color/colorSecondary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <com.google.android.material.button.MaterialButton
-        android:layout_marginTop="32dp"
         style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        android:text="Weiter"
+        android:layout_marginTop="32dp"
+        android:text="@string/next"
         android:textColor="@color/white"
         app:backgroundTint="@color/colorPrimary" />
 
