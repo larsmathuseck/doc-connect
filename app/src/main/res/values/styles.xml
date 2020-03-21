@@ -9,4 +9,11 @@
         <item name="fontFamily">@font/open_sans</item>
     </style>
 
+    <style name="AppFont">
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="AppFont.Title">
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
 </resources>
