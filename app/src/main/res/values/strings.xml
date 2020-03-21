@@ -6,13 +6,23 @@
     <string name="title_news">Neuigkeiten</string>
     <string name="hello">Hallo!</string>
     <string name="intro_text">Wir freuen uns, dass Sie hier sind!\n\nWir brauchen noch ein paar Informationen, dann kann es los gehen</string>
-    <string name="whats_your_name">Wie ist Ihre Health-Hero ID?</string>
+    <string name="whats_your_name">Wie ist Ihre Heilberufler-ID?</string>
+    <string name="unique_id">Heilberufler-ID</string>
     <string name="next">Weiter</string>
-    <string name="unique_id">Eindeutige Identifikation</string>
     <string name="whats_your_profession">Was ist Ihr Beruf?</string>
     <string name="loading_data">Datenabgleich</string>
     <string name="please_wait">Das kann einen Moment dauern</string>
     <string name="dummy_profession">Allgemeinmediziner aus Berlin</string>
     <string name="dummy_hello">Hallo Herr Dr. Klenk!</string>
     <string name="start_now">Jetzt starten</string>
+    <string name="organization">Organisation</string>
+    <string name="province">Bundesland</string>
+    <string name="logout">Logout</string>
+    <string name="delete_account">Account löschen</string>
+    <string name="name_desc">Titel, Vorname, Nachname</string>
+    <string name="dummy_organization">Hauspraxis Klenk Berlin</string>
+    <string name="dummy_name">Herr Dr. Alfred Klenk</string>
+    <string name="dummy_province">Berlin</string>
+    <string name="dummy_unique_id">4884–4856-3244-5034</string>
+    <string name="account">Account</string>
 </resources>

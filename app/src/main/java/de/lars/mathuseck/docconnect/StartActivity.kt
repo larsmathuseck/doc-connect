@@ -11,7 +11,7 @@ class StartActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         val options = ActivityOptions.makeCustomAnimation(this, 0, 0)
-        val intent = Intent(this, OnboardingActivity::class.java)
+        val intent = Intent(this, MainActivity::class.java)
 
         startActivity(intent, options.toBundle())
     }
