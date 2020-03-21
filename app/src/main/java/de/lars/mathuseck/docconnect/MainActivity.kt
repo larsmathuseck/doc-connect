@@ -47,11 +47,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var fragmentStateManager: FragmentStateManager
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        startActivity(Intent(this, OnboardingActivity::class.java))
-
         setContentView(R.layout.activity_main)
-
 
         fragmentStateManager = object : FragmentStateManager(mainContent, supportFragmentManager) {
             override fun getItem(position: Int): Fragment {
