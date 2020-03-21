@@ -2,6 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/navigation_news"
+        android:icon="@drawable/ic_update"
+        android:title="@string/title_news" />
+
+    <item
         android:id="@+id/navigation_info"
         android:icon="@drawable/ic_info"
         android:title="@string/title_information" />
@@ -11,10 +16,11 @@
         android:icon="@drawable/ic_help"
         android:title="@string/title_questions" />
 
+
     <item
-        android:id="@+id/navigation_news"
-        android:icon="@drawable/ic_update"
-        android:title="@string/title_news" />
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/ic_account_circle"
+        android:title="@string/title_account" />
 
     <item
         android:id="@+id/navigation_account"

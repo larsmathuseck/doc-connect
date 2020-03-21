@@ -18,10 +18,10 @@ private const val POSITION_ACCOUNT = 3
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var accountFragment: AccountFragment
     private lateinit var infoFragment: InformationFragment
     private lateinit var questionFragment: MainQuestionsFragment
     private lateinit var newsFragment: NewsFragment
+    private lateinit var accountFragment: AccountFragment
 
     private val navigationSelectedListener =
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
@@ -92,8 +92,8 @@ class MainActivity : AppCompatActivity() {
         // then we don't need to do anything or
         // we could end up with overlapping fragments.
         if (savedInstanceState == null) {
-            fragmentStateManager.changeFragment(POSITION_INFO)
-            navigation.selectedItemId = R.id.navigation_info
+            fragmentStateManager.changeFragment(POSITION_NEWS)
+            navigation.selectedItemId = R.id.navigation_news
         }
     }
 
@@ -103,8 +103,8 @@ class MainActivity : AppCompatActivity() {
      */
     override fun onBackPressed() {
         val position = getNavPositionFromMenuItem(navigation.selectedItemId)
-        if (position != POSITION_INFO) {
-            navigation.selectedItemId = R.id.navigation_info
+        if (position != POSITION_NEWS) {
+            navigation.selectedItemId = R.id.navigation_news
         } else {
             // close app
             finishAffinity()

@@ -4,6 +4,7 @@
     <string name="title_information">Informationen</string>
     <string name="title_questions">Fragen</string>
     <string name="title_news">Neuigkeiten</string>
+    <string name="title_account">Profil</string>
     <string name="hello">Hallo!</string>
     <string name="intro_text">Wir freuen uns, dass Sie hier sind!\n\nWir brauchen noch ein paar Informationen, dann kann es los gehen</string>
     <string name="whats_your_name">Wie ist Ihre Heilberufler-ID?</string>
