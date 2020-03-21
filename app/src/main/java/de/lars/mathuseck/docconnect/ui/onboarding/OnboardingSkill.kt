@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import de.lars.mathuseck.docconnect.R
+import de.lars.mathuseck.docconnect.utils.SharedPreferencesHelper
 import kotlinx.android.synthetic.main.onboarding_skill_fragment.*
 
 class OnboardingSkill : Fragment() {
@@ -23,6 +24,7 @@ class OnboardingSkill : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         startButton.setOnClickListener {
+            SharedPreferencesHelper(requireContext()).setUserToken("Test")
             view.findNavController()
                 .navigate(R.id.action_onboardingSkill_to_mainActivity)
         }

@@ -48,7 +48,6 @@ class QuestionsFragment : Fragment(),DropdownModel.OnInteractionListener, SortDi
     }
 
     private fun buildModels() {
-
         if(showAnsweredQuestions) {
             questionsRv.withModels {
                 dropdown {

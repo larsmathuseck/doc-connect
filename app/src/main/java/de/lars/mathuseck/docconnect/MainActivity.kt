@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import de.lars.mathuseck.docconnect.ui.account.AccountFragment
 import de.lars.mathuseck.docconnect.ui.info.InformationFragment
 import de.lars.mathuseck.docconnect.ui.news.NewsFragment
 import de.lars.mathuseck.docconnect.ui.questions.MainQuestionsFragment
@@ -15,12 +16,14 @@ import kotlinx.android.synthetic.main.activity_main.*
 private const val POSITION_INFO = 0
 private const val POSITION_QUESTIONS = 1
 private const val POSITION_NEWS = 2
+private const val POSITION_ACCOUNT = 3
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var infoFragment: InformationFragment
     private lateinit var questionFragment: MainQuestionsFragment
     private lateinit var newsFragment: NewsFragment
+    private lateinit var accountFragment: AccountFragment
 
     private val navigationSelectedListener =
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
@@ -34,6 +37,7 @@ class MainActivity : AppCompatActivity() {
                 POSITION_INFO -> infoFragment.fragmentReselected()
                 POSITION_QUESTIONS -> questionFragment.fragmentReselected()
                 POSITION_NEWS -> newsFragment.fragmentReselected()
+                POSITION_ACCOUNT -> accountFragment.fragmentReselected()
                 else -> infoFragment.fragmentReselected()
             }
         }
@@ -42,6 +46,7 @@ class MainActivity : AppCompatActivity() {
         R.id.navigation_info -> POSITION_INFO
         R.id.navigation_questions -> POSITION_QUESTIONS
         R.id.navigation_news -> POSITION_NEWS
+        R.id.navigation_account -> POSITION_ACCOUNT
         else -> POSITION_INFO
     }
 
@@ -65,6 +70,10 @@ class MainActivity : AppCompatActivity() {
                         newsFragment = NewsFragment.newInstance()
                         newsFragment
                     }
+                    POSITION_ACCOUNT -> {
+                        accountFragment = AccountFragment()
+                        accountFragment
+                    }
                     else -> {
                         infoFragment = InformationFragment.newInstance()
                         infoFragment
@@ -76,6 +85,7 @@ class MainActivity : AppCompatActivity() {
         infoFragment = InformationFragment.newInstance()
         questionFragment = MainQuestionsFragment.newInstance()
         newsFragment = NewsFragment.newInstance()
+        accountFragment = AccountFragment.newInstance()
 
         navigation.setOnNavigationItemSelectedListener(navigationSelectedListener)
         navigation.setOnNavigationItemReselectedListener(navigationReselectedListener)

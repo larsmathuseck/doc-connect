@@ -16,4 +16,9 @@
         android:icon="@drawable/ic_update"
         android:title="@string/title_news" />
 
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/ic_account_circle"
+        android:title="@string/title_account" />
+
 </menu>
