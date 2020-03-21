@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/onboardingStartFragment"
+    android:id="@+id/onboardingLoadingFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -11,15 +11,16 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="32dp"
-    tools:context=".ui.onboarding.OnboardingStart">
+    tools:context=".ui.onboarding.OnboardingLoading">
+
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/wavingDocsAV"
+        android:id="@+id/loadingAV"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="300dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/lottie_wavingdocs" />
+        app:lottie_rawRes="@raw/data" />
 
     <TextView
         android:id="@+id/welcomeMessageTV"
@@ -28,28 +29,15 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/open_sans"
         android:gravity="center"
-        android:text="@string/hello"
+        android:text="@string/loading_data"
         android:textColor="@color/colorSecondaryDark"
         android:textSize="32sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="@string/intro_text"
-        android:textColor="@color/colorSecondary"
-        android:textSize="18sp" />
+        android:text="@string/please_wait" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/startButton"
-        style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_marginTop="32dp"
-        android:text="Weiter"
-        android:textColor="@color/white"
-        app:backgroundTint="@color/colorPrimary" />
 
 </LinearLayout>

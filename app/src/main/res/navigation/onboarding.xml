@@ -10,8 +10,8 @@
         android:label="OnboardingName"
         tools:layout="@layout/onboarding_name_fragment" >
         <action
-            android:id="@+id/action_onboardingName_to_onboardingSkillFragment"
-            app:destination="@id/onboardingSkillFragment" />
+            android:id="@+id/action_onboardingName_to_onboardingLoadingFragment2"
+            app:destination="@id/onboardingLoadingFragment2" />
     </fragment>
     <fragment
         android:id="@+id/onboardingStart"
@@ -21,11 +21,30 @@
         <action
             android:id="@+id/action_onboardingStart_to_onboardingName"
             app:destination="@id/onboardingName"
+            app:enterAnim="@anim/fragment_close_enter"
             app:popUpToInclusive="false" />
     </fragment>
     <fragment
-        android:id="@+id/onboardingSkillFragment"
+        android:id="@+id/onboardingLoadingFragment2"
+        android:name="de.lars.mathuseck.docconnect.ui.onboarding.OnboardingLoading"
+        android:label="onboarding_loading_fragment"
+        tools:layout="@layout/onboarding_loading_fragment" >
+        <action
+            android:id="@+id/action_onboardingLoadingFragment2_to_onboardingSkill"
+            app:destination="@id/onboardingSkill" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingSkill"
         android:name="de.lars.mathuseck.docconnect.ui.onboarding.OnboardingSkill"
         android:label="onboarding_skill_fragment"
-        tools:layout="@layout/onboarding_skill_fragment" />
+        tools:layout="@layout/onboarding_skill_fragment" >
+        <action
+            android:id="@+id/action_onboardingSkill_to_mainActivity"
+            app:destination="@id/mainActivity"
+            app:launchSingleTop="true" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="de.lars.mathuseck.docconnect.MainActivity"
+        android:label="MainActivity" />
 </navigation>
