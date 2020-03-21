@@ -46,7 +46,7 @@ class NewsFragment : Fragment(),
             for (i in 0..10) {
                 news {
                     id("news_car_$i")
-                    author("Rober Koch Institut")
+                    author("Robert Koch Institut")
                     date("21.03.2020, 12:31 Uhr")
                     title("Risikobewertung für Deutschland ist jetzt hoch")
                     description("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum ")
