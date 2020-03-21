@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "507150943692",
+    "firebase_url": "https://medcat-dev-a8d2b.firebaseio.com",
+    "project_id": "medcat-dev-a8d2b",
+    "storage_bucket": "medcat-dev-a8d2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507150943692:android:cfc0f9ef438319c3e1c969",
+        "android_client_info": {
+          "package_name": "de.lars.mathuseck.docconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507150943692-633bk3qoqeh58163i2s8v47unkv0374b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ1oAmxmTGa0uKCbQGyklxEVDnWACG1sU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507150943692-633bk3qoqeh58163i2s8v47unkv0374b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
