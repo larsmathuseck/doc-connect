@@ -49,7 +49,7 @@ class NewsFragment : Fragment(),
                     author("Rober Koch Institut")
                     date("21.03.2020, 12:31 Uhr")
                     title("Risikobewertung für Deutschland ist jetzt hoch")
-                    description("Risikobewertung für Deutschland ist jetzt hoch Risikobewertung für Deutschland ist jetzt hoch Risikobewertung für Deutschland ist jetzt hoch Risikobewertung für Deutschland ist jetzt hoch Risikobewertung für Deutschland ist jetzt hoch Risikobewertung für Deutschland ist jetzt hoch Risikobewertung für Deutschland ist jetzt hoch Risikobewertung für Deutschland ist jetzt hoch")
+                    description("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum ")
                 }
             }
         }
