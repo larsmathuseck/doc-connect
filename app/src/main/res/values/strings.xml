@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DocConnect</string>
+
+    <string name="title_information">Informationen</string>
+    <string name="title_questions">Fragen</string>
+    <string name="title_news">Neuigkeiten</string>
 </resources>
