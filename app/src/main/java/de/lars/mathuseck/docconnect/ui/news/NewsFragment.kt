@@ -40,7 +40,7 @@ class NewsFragment : Fragment(),
         newsRv.withModels {
             title {
                 id("updates_title")
-                title("Updates")
+                title("Neuigkeiten")
             }
 
             for (i in 0..10) {
