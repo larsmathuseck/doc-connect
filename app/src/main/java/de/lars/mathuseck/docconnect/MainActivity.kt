@@ -94,8 +94,8 @@ class MainActivity : AppCompatActivity() {
         // then we don't need to do anything or
         // we could end up with overlapping fragments.
         if (savedInstanceState == null) {
-            fragmentStateManager.changeFragment(POSITION_INFO)
-            navigation.selectedItemId = R.id.navigation_info
+            fragmentStateManager.changeFragment(POSITION_NEWS)
+            navigation.selectedItemId = R.id.navigation_news
         }
     }
 
@@ -105,8 +105,8 @@ class MainActivity : AppCompatActivity() {
      */
     override fun onBackPressed() {
         val position = getNavPositionFromMenuItem(navigation.selectedItemId)
-        if (position != POSITION_INFO) {
-            navigation.selectedItemId = R.id.navigation_info
+        if (position != POSITION_NEWS) {
+            navigation.selectedItemId = R.id.navigation_news
         } else {
             // close app
             finishAffinity()
