@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/onboarding"
+    app:startDestination="@id/onboardingName2">
+    <fragment
+        android:id="@+id/onboardingName2"
+        android:name="de.lars.mathuseck.docconnect.ui.onboarding.OnboardingName"
+        android:label="OnboardingName"
+        tools:layout="@layout/onboarding_name_fragment" >
+        <action
+            android:id="@+id/action_onboardingName2_to_onboardingSkillFragment"
+            app:destination="@id/onboardingSkillFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingStart2"
+        android:name="de.lars.mathuseck.docconnect.ui.onboarding.OnboardingStart"
+        android:label="onboarding_start_fragment"
+        tools:layout="@layout/onboarding_start_fragment" >
+        <action
+            android:id="@+id/action_onboardingStart2_to_onboardingName2"
+            app:destination="@id/onboardingName2" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingSkillFragment"
+        android:name="de.lars.mathuseck.docconnect.ui.onboarding.OnboardingSkill"
+        android:label="onboarding_skill_fragment"
+        tools:layout="@layout/onboarding_skill_fragment" />
+</navigation>
