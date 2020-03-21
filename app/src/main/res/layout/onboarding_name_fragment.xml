@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="32dp"
     tools:context=".ui.onboarding.OnboardingName">
@@ -14,11 +16,11 @@
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/wavingDocsAV"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="200dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_speed="1"
-        app:lottie_rawRes="@raw/data" />
+        app:lottie_rawRes="@raw/successfully_added"
+        app:lottie_speed="1" />
 
     <TextView
         android:id="@+id/welcomeMessageTV"
@@ -32,17 +34,23 @@
         android:textSize="32sp" />
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="@string/name"
+        android:hint="@string/unique_id"
+        android:imeOptions="actionDone"
         app:boxBackgroundColor="@color/white"
         app:boxStrokeColor="@color/colorPrimary"
         app:hintTextColor="@color/colorSecondary">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
