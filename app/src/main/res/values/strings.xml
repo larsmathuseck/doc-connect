@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Doc Connect</string>
-    <string name="app_name">DocConnect</string>
 
     <string name="title_information">Informationen</string>
     <string name="title_questions">Fragen</string>
