@@ -8,6 +8,8 @@ The Infection Response Information System (I.R.I.S) is a system to spread valid 
 ## About this repo
 This is this Android App, used by end-users (frontend). We target doctors and other health related professions.
 
+![Screenshot](screenshots/screenshots2.jpg)
+
 ### Tech-Stack
 * Android native with Kotlin
 * Epoxy-based layout
