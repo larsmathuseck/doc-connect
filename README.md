@@ -1,6 +1,6 @@
 # I.R.I.S
 
-[logo]: https://raw.githubusercontent.com/larsmathuseck/doc-connect/master/app/src/main/res/drawable/irislogo.png
+![logo](https://raw.githubusercontent.com/larsmathuseck/doc-connect/master/app/src/main/res/drawable/irislogo.png)
 
 ## What is I.R.I.S
 The Infection Response Information System (I.R.I.S) is a system to spread valid informations form authorized and trusted sources to healthcare-related persons, such as doctors.
