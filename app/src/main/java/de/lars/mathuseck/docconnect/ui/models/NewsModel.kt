@@ -1,6 +1,7 @@
 package de.lars.mathuseck.docconnect.ui.models
 
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyHolder
@@ -24,11 +25,15 @@ abstract class NewsModel : EpoxyModelWithHolder<NewsModel.Holder>() {
     @EpoxyAttribute
     var description: String? = null
 
+    @EpoxyAttribute
+    var issuerLogo: Int? = null
+
     override fun bind(holder: Holder) {
         holder.authorTv.text = author
         holder.dateTv.text = date
         holder.titleTv.text = title
         holder.descTv.text = description
+        holder.newsIv.setImageResource(issuerLogo ?: R.drawable.logo_rki)
 
         holder.newsCv.setOnClickListener {
 
@@ -42,6 +47,7 @@ abstract class NewsModel : EpoxyModelWithHolder<NewsModel.Holder>() {
         lateinit var dateTv: TextView
         lateinit var titleTv: TextView
         lateinit var descTv: TextView
+        lateinit var newsIv: ImageView
 
         override fun bindView(itemView: View) {
             newsCv = itemView.findViewById(R.id.newsCv)
@@ -49,6 +55,7 @@ abstract class NewsModel : EpoxyModelWithHolder<NewsModel.Holder>() {
             dateTv = itemView.findViewById(R.id.newsDateTv)
             titleTv = itemView.findViewById(R.id.newsTitleTv)
             descTv = itemView.findViewById(R.id.newsDescTv)
+            newsIv = itemView.findViewById(R.id.newsIv)
         }
     }
 

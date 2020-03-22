@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import de.lars.mathuseck.docconnect.MainActivity
+import de.lars.mathuseck.docconnect.Model
 import de.lars.mathuseck.docconnect.R
 import de.lars.mathuseck.docconnect.ui.models.news
 import de.lars.mathuseck.docconnect.ui.models.title
@@ -43,13 +44,14 @@ class NewsFragment : Fragment(),
                 title("Neuigkeiten")
             }
 
-            for (i in 0..10) {
+            Model.news.forEach {
                 news {
-                    id("news_car_$i")
-                    author("Robert Koch Institut")
-                    date("21.03.2020, 12:31 Uhr")
-                    title("Risikobewertung für Deutschland ist jetzt hoch")
-                    description("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum ")
+                    id("news_car_${it.id}")
+                    author(it.issuer)
+                    date(it.date)
+                    title(it.title)
+                    description(it.description)
+                    issuerLogo(it.icon)
                 }
             }
         }
