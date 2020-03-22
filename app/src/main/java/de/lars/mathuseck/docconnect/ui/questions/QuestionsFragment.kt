@@ -32,8 +32,8 @@ class QuestionsFragment : Fragment(), DropdownModel.OnInteractionListener,
         return inflater.inflate(R.layout.fragment_questions, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+    override fun onResume() {
+        super.onResume()
 
         buildModels()
     }
@@ -48,7 +48,12 @@ class QuestionsFragment : Fragment(), DropdownModel.OnInteractionListener,
     }
 
     private fun buildModels() {
-        var questions = Model.questions
+        var questions = if (showAnsweredQuestions) {
+            Model.answeredQuestions.toList()
+        } else {
+            Model.questions.toList()
+        }
+
         if (sorting == Sorting.FAMOUS) {
             questions = questions.sortedByDescending { it.upvotes }
         }
