@@ -11,7 +11,7 @@
     <string name="unique_id">Heilberufler-ID</string>
     <string name="next">Weiter</string>
     <string name="whats_your_profession">Was ist Ihr Beruf?</string>
-    <string name="loading_data">Datenabgleich</string>
+    <string name="loading_data">I.R.I.S Datenabgleich</string>
     <string name="please_wait">Das kann einen Moment dauern</string>
     <string name="dummy_profession">Allgemeinmediziner aus Berlin</string>
     <string name="dummy_hello">Hallo Herr Dr. Klenk!</string>
@@ -77,4 +77,5 @@ Inzwischen stehen auch kommerziell erhältliche Testsysteme zur Verfügung.</str
     <string name="info_dummy_1_text">Durch den vorherrschenden Übertragungsweg  von SARS-CoV-2 (Tröpfcheninfektion) z.B. durch Hus-ten, Niesen oder engen Kontakt von Angesicht zu Angesicht kann es durch teils mild erkrankte oder auch asymptomatisch infizierte Personenzu Übertragungen von Mensch-zu-Menschkommen.\n\nAuch Übertragungen durch Schmierinfektionen sind beschrieben, betreffen allerdings nur einen kleinen Teil der Fälle.\n\nÜbertragungen kommen im privaten und beruflichen Umfeld, aber auch bei größeren Veranstaltungen vor.\n\nGrößere Ausbrüche wurden in Zusammenhang mit Konferenzen (Singapur), Reisegruppen, Gottesdiensten (Südkorea) oder auch Karnevalsveranstaltungen (Deutschland) be-schrieben.\n\nAuf Messen, Kongressen oder  größeren Veranstaltungen kann es unter ungünstigen Be-dingungen zu einer Übertragung auf viele Personen kommen.\n\nEine zeitgleiche Infektion vieler Men-schen kann zu einer Überlastung der örtlichen medizinischen Versorgungsstrukturen führen.</string>
     <string name="more">mehr lesen</string>
     <string name="less">weniger</string>
+    <string name="credits">Entwickelt mit Team I.R.I.S für den #WirVsVirus Hackathon.</string>
 </resources>

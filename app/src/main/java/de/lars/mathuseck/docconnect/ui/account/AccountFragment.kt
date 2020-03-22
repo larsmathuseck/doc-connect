@@ -11,6 +11,7 @@ import de.lars.mathuseck.docconnect.OnboardingActivity
 import de.lars.mathuseck.docconnect.R
 import de.lars.mathuseck.docconnect.ui.models.AccountModel
 import de.lars.mathuseck.docconnect.ui.models.account
+import de.lars.mathuseck.docconnect.ui.models.credits
 import de.lars.mathuseck.docconnect.ui.models.title
 import de.lars.mathuseck.docconnect.utils.SharedPreferencesHelper
 import kotlinx.android.synthetic.main.fragment_account.*
@@ -56,6 +57,15 @@ class AccountFragment : Fragment(),
                 province(getString(R.string.dummy_province))
                 unqiueId(getString(R.string.dummy_unique_id))
                 onInteractionListener(this@AccountFragment)
+            }
+
+            title {
+                id("credits_title")
+                title("App Info")
+            }
+
+            credits {
+                id("credits")
             }
         }
     }

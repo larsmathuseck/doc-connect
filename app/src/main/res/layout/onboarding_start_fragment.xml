@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/onboardingStartFragment"
@@ -8,7 +8,6 @@
     android:background="@color/white"
     android:clickable="true"
     android:focusable="true"
-    android:gravity="center"
     android:orientation="vertical"
     android:padding="32dp"
     tools:context=".ui.onboarding.OnboardingStart">
@@ -16,7 +15,9 @@
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/wavingDocsAV"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/lottie_wavingdocs" />
@@ -25,16 +26,18 @@
         android:id="@+id/welcomeMessageTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_below="@+id/wavingDocsAV"
+        android:layout_marginTop="32dp"
         android:gravity="center"
         android:text="@string/hello"
         android:textColor="@color/colorSecondaryDark"
         android:textSize="32sp" />
 
     <TextView
+        android:id="@+id/startText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_below="@+id/welcomeMessageTV"
         android:gravity="center"
         android:text="@string/intro_text"
         android:textColor="@color/colorSecondary"
@@ -45,10 +48,27 @@
         style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/startText"
+        android:layout_alignParentEnd="true"
         android:layout_gravity="end"
         android:layout_marginTop="32dp"
-        android:text="Weiter"
+        android:text="@string/next"
         android:textColor="@color/white"
         app:backgroundTint="@color/colorPrimary" />
 
-</LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/wirvsvirus" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/irislogo" />
+
+</RelativeLayout>

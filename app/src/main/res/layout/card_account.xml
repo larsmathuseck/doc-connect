@@ -111,7 +111,6 @@
                 app:strokeColor="@color/red"
                 app:strokeWidth="1dp" />
 
-
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
