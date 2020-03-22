@@ -27,6 +27,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
+                    android:id="@+id/newsIv"
                     android:layout_width="50dp"
                     android:layout_height="32dp"
                     android:scaleType="fitCenter"
