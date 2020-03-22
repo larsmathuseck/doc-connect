@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/informationTitleTv"
+                style="@style/AppFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Übertragungswege SARS-CoV-2" />
+
+            <TextView
+                android:id="@+id/infoTextTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorSecondary"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:text="Durch den vorherrschenden Übertragungsweg  von SARS-CoV-2 (Tröpfcheninfektion) z.B. durch Hus-ten, Niesen oder engen Kontakt von Angesicht zu Angesicht kann es durch teils mild erkrankte oder auch asymptomatisch infizierte Personenzu Übertragungen von Mensch-zu-Menschkommen. Auch Übertragungen durch Schmierinfektionen sind beschrieben, betreffen allerdings nur einen kleinen Teil der Fälle. Übertragungen kommen im privaten und beruflichen Umfeld, aber auch bei größeren Veranstaltungen vor. Größere Ausbrüche wurden in Zusammenhang mit Konferenzen (Singapur), Reisegruppen,Gottesdiensten (Südkorea) oder auch Karnevalsveranstaltungen (Deutschland) be-schrieben. Auf Messen, Kongressen oder  größeren Veranstaltungen kann es unter ungünstigen Be-dingungen zu einer Übertragung auf viele Personen kommen. Eine zeitgleiche Infektion vieler Men-schen kann zu einer Überlastung der örtlichen medizinischen Versorgungsstrukturen führen. "
+                tools:visibility="visible" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/expandButton"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                android:text="mehr" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

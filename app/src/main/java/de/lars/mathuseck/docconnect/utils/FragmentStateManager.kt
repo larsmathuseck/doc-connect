@@ -38,7 +38,7 @@ abstract class FragmentStateManager(internal var container: ViewGroup, private v
         }
 
         // Detach existing primary fragment
-        val curFrag = mFragmentManager.getPrimaryNavigationFragment()
+        val curFrag = mFragmentManager.primaryNavigationFragment
         if (curFrag != null) {
             fragmentTransaction.detach(curFrag)
         }

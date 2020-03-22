@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Doc Connect</string>
+    <string name="app_name">I.R.I.S</string>
 
     <string name="title_information">Informationen</string>
     <string name="title_questions">Fragen</string>
@@ -26,4 +26,53 @@
     <string name="dummy_province">Berlin</string>
     <string name="dummy_unique_id">4884–4856-3244-5034</string>
     <string name="account">Account</string>
+    <string name="info">Informationen</string>
+    <string name="search">Inhalte durchsuchen</string>
+    <string name="info_dummy_7_title">Optionen zur getrennten Versorgung von COVID-19-Verdachtsfällen / Fällen und anderen Patienten im Gesundheitswesen</string>
+    <string name="info_dummy_7_text">Nosokomiale Infektionen und Infektionen von Mitarbeiterinnen und Mitarbeitern im Gesundheitswesen (international gebräuchlich: health care worker; HCW) stellen eine besondere Herausforderung in großen Ausbrüchen wie SARS-CoV-2 dar. Krankenhausübertragungen und -ausbrüche spielten bei SARS und MERS und auch zu Beginn in China sowie aktuell in vielen anderen Ländern bei SARS-CoV-2 eine sehr große Rolle. Insbesondere HCW und Patienten müssen vor einer Transmission und Infektion geschützt werden, da infizierte HCW in der Krankenversorgung fehlen und SARS-CoV-2 auf nicht infizierte Patienten und Patientinnen übertragen können. Bei Patienten ist bei höherem Durchschnittsalter und Grunderkrankungen mit besonders schweren Krankheitsverläufen zu rechnen, weshalb diese besonders vor Infektionen geschützt werden müssen.</string>
+    <string name="info_dummy_6_title">Kriterien zur Entlassung aus der häuslichen Isolierung</string>
+    <string name="info_dummy_6_text">a. Ohne vorangegangenen Krankenhausaufenthalt
+
+(leichter Krankheitsverlauf)
+
+- Frühestens 14 Tage nach Symptombeginn
+- Symptomfreiheit seit mind. 48 Stunden bezogen auf die akute COVID-19-Erkrankung (nach Rücksprache mit ärztlicher Betreuung)
+b. Nach vorangehendem Krankenhausaufenthalt
+
+(aufgrund eines schweren Krankheitsverlaufs)
+
+- Frühestens 14 Tage nach Entlassung aus dem Krankenhaus
+- Symptomfreiheit seit mind. 48 Stunden bezogen auf die akute COVID-19-Erkrankung (nach Rücksprache mit ärztlicher Betreuung)
+
+Im Einzelfall kann in enger Absprache von Klinik, Labor und Gesundheitsamt von diesen Kriterien abgewichen werden, insbesondere bei Beteiligung von Personen, die den Risikogruppen zugerechnet werden (z.B. Immunsupprimierte, ältere Menschen, chronisch Erkrankte).
+                </string>
+    <string name="info_dummy_5_title">COVID-19: Kriterien zur Entlassung aus dem Krankenhaus bzw. aus der häuslichen Isolierung</string>
+    <string name="info_dummy_5_text">a. In die häusliche Isolierung\n\n
+- Klinische Besserung, die basierend auf ärztlicher Einzelfallbeurteilung eine ambulante Weiterbetreuung erlaubt\n\n
+- Voraussetzungen bzgl. Umfeld erfüllt (siehe www.rki.de/covid-19-ambulant)\n\n
+b. Vollständige Entlassung ohne weitere Auflagen\n\n
+
+- Symptomfreiheit seit mind. 48 Stunden bezogen auf die akute COVID-19-Erkrankung\n\n
+- 2 negative SARS-CoV-2-PCR-Untersuchungen im Abstand von 24 Stunden gewonnen aus oro-/nasopharyngealen Abstrichen</string>
+    <string name="info_dummy_4_title">Erregernachweis durch RT-PCR</string>
+    <string name="info_dummy_4_text">Für eine labordiagnostische Abklärung des Verdachts auf eine Infektion mit dem SARS-CoV-2 wurden PCR-Nachweissysteme u.a. auch vom Konsiliarlabor für Coronaviren (Charité Berlin) entwickelt und vorläufig validiert. Nähere Angaben sind über die Webseite der WHO zu Coronaviren verfügbar.\n\n
+
+Proben zur Untersuchung können auch an das Konsiliarlabor für Coronaviren verschickt werden.\n\n
+
+Eine Testung ist grundsätzlich bei symptomatischen Personen entsprechend der Empfehlungen des RKI sowie im Rahmen der differentialdiagnostischen Abklärung empfohlen, wenn ein klinischer Verdacht besteht aufgrund von Anamnese, Symptomen oder Befunden, die mit einer COVID-19-Erkrankung vereinbar sind und eine Diagnose für eine andere Erkrankung fehlt, die das Krankheitsbild ausreichend erklärt (s. hierzu auch das jeweils aktuelle Flussdiagramm des RKI sowie die Angaben der KBV zur Vergütung der Leistungen).\n\n
+
+Ein negatives PCR-Ergebnis schließt die Möglichkeit einer Infektion mit SARS-CoV-2 nicht vollständig aus. Falsch-negative Ergebnisse können z.B. aufgrund schlechter Probenqualität, unsachgemäßem Transport oder ungünstigem Zeitpunkt (bezogen auf den Krankheitsverlauf) der Probenentnahme nicht ausgeschlossen werden. Wenn ein Patient mit begründetem Verdacht auf SARS-CoV-2-Infektion in der initialen PCR negativ getestet wird, sollte mit dem Labor eine erneute Probenentnahme und -untersuchung abgesprochen werden. Das am besten geeignete Untersuchungsmaterial ist vom Zeitpunkt der Entnahme im Verlauf der Erkrankung abhängig. Bei tiefen Atemwegsinfektionen ist die alleinige Testung von Probenmaterial aus dem Oro- und Nasopharynx zum Ausschluss einer Infektion nicht geeignet, da in dieser Phase der Erkrankung ggf. nur Material aus dem unteren Respirationstrakt oder Stuhl in der PCR positiv sind.\n\n
+
+Die Proben sollten differentialdiagnostisch auch auf andere in Frage kommende respiratorische Erreger untersucht werden.\n\n
+
+Die vom Patienten gewonnenen Proben sollten asserviert werden, um im Zweifelsfall weitere Untersuchungen zu ermöglichen.\n\n
+
+Inzwischen stehen auch kommerziell erhältliche Testsysteme zur Verfügung.</string>
+    <string name="info_dummy_3_title">Probenmaterial für die PCR-Diagnostik zum Erregernachweis</string>
+    <string name="info_dummy_3_text">"Bei Verdacht auf das Vorliegen einer Infektion mit dem neuartigen Coronavirus (SARS-CoV-2) sollten je nach klinischer Situation möglichst Proben parallel aus den oberen und den tiefen Atemwegen entnommen werden.\n\nObere Atemwege:\n\n    Nasopharynx-Abstrich oder -Spülung\n    Oropharynx-Abstrich\n\nTiefe Atemwege:\n\n    Bronchoalveoläre Lavage\n    Sputum (nach Anweisung produziert bzw. induziert; Arbeitsschutz beachten)\n    Trachealsekret\n\nBei Abstrichen ist zu beachten, dass für den Virusnachweis geeignete Tupfer verwendet werden (\"Virustupfer\" mit entsprechendem Transport-Medium oder notfalls trockene Tupfer mit kleiner Menge NaCl-Lösung; kein Agar-Tupfer). ")
+</string>
+    <string name="info_dummy_2_title">Faktoren, die Übertragungen SARS-CoV-2 begünstigen</string>
+    <string name="info_dummy_2_text">"Das Risiko von großen und oder schwer verlaufenden COVID-19 Ausbrüchen nach einer Übertragung von SARS-CoV-2 bei einer Veranstaltung hängt mitder Zusammensetzung der Teilnehmer, Art und Typ der Veranstaltung sowie Möglichkeiten der Kontrolle im Falle eines Ausbruches zusammen.\n\n Ein höheres Risiko kann basierend auf folgenden Kriterien angenommen werdenbei:\n\n(1) Eher risikogeneigterZusammensetzung der Teilnehmer \n\nKommt eine größere Anzahl von Menschen zusammen, hohe Dichte?\n\nNehmen Menschen aus Regionen mit gehäuftem Auftreten von COVID-19-Fällenteil?\n\nNehmen Menschen aus anderen bekannten besonders betroffenen Gebieten in Deutsch-land/ internationalen Risikogebietenteil?\uF0B7Nehmen Menschen mit akuten respiratorischen Symptomenteil?\uF0B7Nehmen ältere Menschen bzw. Menschen mit Grunderkrankungen teil?\uF0B7Nehmen Mitarbeitende des Gesundheitswesens oder der Kritischen Infrastruktur teil?")</string>
+    <string name="info_dummy_1_title">Übertragungswege SARS-CoV-2</string>
+    <string name="info_dummy_1_text">Durch den vorherrschenden Übertragungsweg  von SARS-CoV-2 (Tröpfcheninfektion) z.B. durch Hus-ten, Niesen oder engen Kontakt von Angesicht zu Angesicht kann es durch teils mild erkrankte oder auch asymptomatisch infizierte Personenzu Übertragungen von Mensch-zu-Menschkommen.\n\nAuch Übertragungen durch Schmierinfektionen sind beschrieben, betreffen allerdings nur einen kleinen Teil der Fälle.\n\nÜbertragungen kommen im privaten und beruflichen Umfeld, aber auch bei größeren Veranstaltungen vor.\n\nGrößere Ausbrüche wurden in Zusammenhang mit Konferenzen (Singapur), Reisegruppen, Gottesdiensten (Südkorea) oder auch Karnevalsveranstaltungen (Deutschland) be-schrieben.\n\nAuf Messen, Kongressen oder  größeren Veranstaltungen kann es unter ungünstigen Be-dingungen zu einer Übertragung auf viele Personen kommen.\n\nEine zeitgleiche Infektion vieler Men-schen kann zu einer Überlastung der örtlichen medizinischen Versorgungsstrukturen führen.</string>
 </resources>
