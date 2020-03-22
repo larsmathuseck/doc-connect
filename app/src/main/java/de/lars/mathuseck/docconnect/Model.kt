@@ -5,56 +5,67 @@ import de.lars.mathuseck.docconnect.models.Question
 object Model {
     var questions: MutableList<Question> = mutableListOf(
         Question(
-            "Question0",
-            "Hilft Ibuprofen gegen SARS-CoV-2?",
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et d",
-            55
-        ),
-        Question(
             "Question1",
-            "Wie kann ich mit Situation X umgehen?",
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et d",
+            "Was bringt die Pneumokokken-Impfung in der aktuellen COVID-19-Pandemie?",
+            "Viele meiner Patienten fragen nach einer Pneumokokken-Impfung. Gibt diese Impfung einen effektiven Schutz gegen COVID-19?",
             354
         ),
         Question(
+            "Question0",
+            "Was ist über COVID-19 bei Kindern und Schwangeren bekannt?",
+            "Ich habe von verschiedenen Stellen mitbekommen, dass Kinder und Jugendliche nicht wirklich betroffen sind. Ist das richtig?",
+            55,
+            answer = "Bisherigen Daten zufolge ist die Symptomatik von COVID-19 bei Kindern deutlich geringer ausgeprägt ist als bei Erwachsenen. Zum tatsächlichen Beitrag von Kindern und Jugendlichen an der Transmission in der Bevölkerung liegen keine Daten vor. Aufgrund der hohen Kontagiosität des Virus und dem engen Kontakt zwischen Kindern und Jugendlichen untereinander erscheint es jedoch plausibel, dass Transmissionen stattfinden.\n" +
+                    "\n" +
+                    "Schwangere scheinen der WHO und deren Daten aus China zufolge kein erhöhtes Risiko für einen schweren Krankheitsverlauf zu haben. Es gibt bislang keine Hinweise darauf, dass COVID-19 auf das Kind im Mutterleib übertragbar ist. Eine Übertragung auf das neugeborene Kind ist über den engen Kontakt und eine Tröpfcheninfektion möglich, bisher gibt es jedoch keine Nachweise von SARS-CoV-2 in der Muttermilch. Die Datenlage ist derzeit aber noch nicht ausreichend, um diese und andere Fragen zu COVID-19 in der Schwangerschaft sicher zu beantworten."
+        ),
+        Question(
+            "Question4",
+            "Weiß man, wie viele COVID-19-Patienten im Krankenhaus behandelt werden und wie viele genesen sind?",
+            "Ich habe an verschiedenen Stellen verschiedene Informationen gelesen. Gibt es hierzu Aussagen von offizieller Seite?",
+            10
+        ),
+        Question(
             "Question2",
-            "Wie kann ich mit Situation Y umgehen?",
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et d",
+            "Wann sollte ich eine Laboruntersuchung auf SARS-CoV-2 veranlassen?",
+            "Ich bin mir in viele Fällen unsicher, ob ich eine Laboruntersuchung veranlassen soll oder nicht. Gibt es hierzu klare Handlungsempfehlungen?",
             231
         ),
         Question(
             "Question3",
-            "Wie kann ich mit Situation A umgehen?",
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et d",
+            "Wie wird eine Infektion mit SARS-CoV-2 labordiagnostisch nachgewiesen?",
+            "Ist der direkte Erregernachweis ausschlaggebend, oder wird die Infektion anderweitig festgestellt?",
             90
-        ),
-        Question(
-            "Question4",
-            "Wie kann ich mit Situation B umgehen?",
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et d",
-            10
-        ),
-        Question(
-            "Question5",
-            "Wie kann ich mit Situation C umgehen?",
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et d",
-            201
-        ),
-        Question(
-            "Question6",
-            "Wie kann ich mit Situation D umgehen?",
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et d",
-            144
-        ),
-        Question(
-            "Question7",
-            "Wie kann ich mit Situation E umgehen?",
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et d",
-            37
         )
     )
 
     var answeredQuestions = mutableListOf(
+        Question(
+            "Question2",
+            "Wann sollte ich eine Laboruntersuchung auf SARS-CoV-2 veranlassen?",
+            "Ich bin mir in viele Fällen unsicher, ob ich eine Laboruntersuchung veranlassen soll. Gibt es hierzu klare Handlungsempfehlungen?",
+            231,
+            answer = "Das RKI hat eine Falldefinition und ein Flussschema erstellt, die umfangreiche Hilfestellung geben, bei welchen Patienten eine Laboruntersuchung auf das neuartige Coronavirus durchgeführt werden sollte.\n" +
+                    "\n" +
+                    "Eine Laboruntersuchung auf SARS-CoV-2 ist dann angezeigt, wenn es sich bei den Betroffenen um begründete COVID-19-Verdachtsfälle handelt, d.h. sie Krankheitszeichen haben und innerhalb der letzten 14 Tage Kontakt zu einem bestätigten COVID-19-Fall hatten und/oder sich innerhalb der letzten 14 Tage in einem Risikogebiet/einem besonders betroffenen Gebiet in Deutschland aufgehalten haben. Darüber hinaus sollte ein Test auch bei Patienten in Erwägung gezogen werden, die Krankheitszeichen haben und sich in den letzten 14 Tagen in Regionen aufgehalten haben, in denen COVID-19-Fälle vorkommen, die aber noch nicht als Risikogebiete/besonders betroffene Gebiete gelten, sowie generell bei Patienten mit Hinweis auf eine virale Pneumonie ohne Alternativdiagnose. \n" +
+                    "\n" +
+                    "Tests bei asymptomatischen Personen werden nicht empfohlen."
+        ),
+        Question(
+            "Question3",
+            "Wie wird eine Infektion mit SARS-CoV-2 labordiagnostisch nachgewiesen?",
+            "Ist der direkte Erregernachweis ausschlaggebend, oder wird die Infektion anderweitig festgestellt?",
+            90,
+            answer = "Für die Feststellung einer akuten Infektion mit dem SARS-CoV-2 ist der direkte Erregernachweis ausschlaggebend. Das Virusgenom wird über hoch-sensitive, molekulare Testsysteme nachgewiesen (real-time PCR). Die reine Testzeit beträgt etwa 4 bis 5 Stunden. Die Zeit zwischen Probenentnahme und Ergebnismitteilung kann nach ein bis zwei Tagen vorliegen, je nach Probenaufkommen kann die Ergebnismitteilung deutlich länger dauern.\n" +
+                    "\n" +
+                    "In der frühen Phase sind Abstriche aus den oberen Atemwegen besonders als Probenmaterial geeignet (Rachenabstriche bzw. Nasopharyngealabstriche). In späteren Phasen können außerdem Sekrete aus den unteren Atemwegen (z.B. Sputumproben) zur Untersuchung genutzt werden. Weitere Informationen zur Testung finden Sie hier. Der Nachweis von SARS-CoV-2 im Stuhl kann u.U. auch noch längere Zeit nach Beginn der Symptome erfolgen, sagt aber allein nichts darüber aus, wie ansteckend ein Patient ist.\n" +
+                    "\n" +
+                    "Zur Ergänzung der molekularen Diagnostik sollte bei schweren Krankheitsverläufen auch eine radiologische/bildgebende Diagnostik erfolgen.\n" +
+                    "\n" +
+                    "Für Forschungszwecke spielt die Virusanzucht in Zellkultursystemen eine große Rolle. Sie setzt sowohl eine besondere Expertise als auch dafür ausgelegte Labore voraus (in Deutschland ein Labor der Sicherheitsstufe 3).\n" +
+                    "\n" +
+                    "Ein Test auf SARS-CoV-2 spezifische Antikörper im Blut/Serum kann für epidemiologische Fragestellungen sinnvoll sein. Aktuell sind diese Tests noch in der Entwicklung bzw. Zulassungsphase, sie stehen noch nicht zur Verfügung. Unabhängig davon spielen sie für die Akutdiagnostik keine Rolle, da zwischen Beginn der Symptomatik und der Nachweisbarkeit spezifischer Antikörpern ca. 7 Tage vergehen (in Einzelfällen auch mehr)."
+        ),
         Question(
             "Question0",
             "Was ist über COVID-19 bei Kindern und Schwangeren bekannt?",
@@ -82,54 +93,13 @@ object Model {
                     "         "
         ),
         Question(
-            "Question2",
-            "Wann sollte ich eine Laboruntersuchung auf SARS-CoV-2 veranlassen?",
-            "Ich bin mir in viele Fällen unsicher, ob ich eine Laboruntersuchung veranlassen soll oder nicht. Gibt es hierzu klare Handlungsempfehlungen?",
-            231,
-            answer = "Das RKI hat eine Falldefinition und ein Flussschema erstellt, die umfangreiche Hilfestellung geben, bei welchen Patienten eine Laboruntersuchung auf das neuartige Coronavirus durchgeführt werden sollte.\n" +
-                    "\n" +
-                    "Eine Laboruntersuchung auf SARS-CoV-2 ist dann angezeigt, wenn es sich bei den Betroffenen um begründete COVID-19-Verdachtsfälle handelt, d.h. sie Krankheitszeichen haben und innerhalb der letzten 14 Tage Kontakt zu einem bestätigten COVID-19-Fall hatten und/oder sich innerhalb der letzten 14 Tage in einem Risikogebiet/einem besonders betroffenen Gebiet in Deutschland aufgehalten haben. Darüber hinaus sollte ein Test auch bei Patienten in Erwägung gezogen werden, die Krankheitszeichen haben und sich in den letzten 14 Tagen in Regionen aufgehalten haben, in denen COVID-19-Fälle vorkommen, die aber noch nicht als Risikogebiete/besonders betroffene Gebiete gelten, sowie generell bei Patienten mit Hinweis auf eine virale Pneumonie ohne Alternativdiagnose. \n" +
-                    "\n" +
-                    "Tests bei asymptomatischen Personen werden nicht empfohlen."
-        ),
-        Question(
-            "Question3",
-            "Wie wird eine Infektion mit SARS-CoV-2 labordiagnostisch nachgewiesen?",
-            "Ist der direkte Erregernachweis ausschlaggebend, oder wird die Infektion anderweitig festgestellt?",
-            90,
-            answer = "Für die Feststellung einer akuten Infektion mit dem SARS-CoV-2 ist der direkte Erregernachweis ausschlaggebend. Das Virusgenom wird über hoch-sensitive, molekulare Testsysteme nachgewiesen (real-time PCR). Die reine Testzeit beträgt etwa 4 bis 5 Stunden. Die Zeit zwischen Probenentnahme und Ergebnismitteilung kann nach ein bis zwei Tagen vorliegen, je nach Probenaufkommen kann die Ergebnismitteilung deutlich länger dauern.\n" +
-                    "\n" +
-                    "In der frühen Phase sind Abstriche aus den oberen Atemwegen besonders als Probenmaterial geeignet (Rachenabstriche bzw. Nasopharyngealabstriche). In späteren Phasen können außerdem Sekrete aus den unteren Atemwegen (z.B. Sputumproben) zur Untersuchung genutzt werden. Weitere Informationen zur Testung finden Sie hier. Der Nachweis von SARS-CoV-2 im Stuhl kann u.U. auch noch längere Zeit nach Beginn der Symptome erfolgen, sagt aber allein nichts darüber aus, wie ansteckend ein Patient ist.\n" +
-                    "\n" +
-                    "Zur Ergänzung der molekularen Diagnostik sollte bei schweren Krankheitsverläufen auch eine radiologische/bildgebende Diagnostik erfolgen.\n" +
-                    "\n" +
-                    "Für Forschungszwecke spielt die Virusanzucht in Zellkultursystemen eine große Rolle. Sie setzt sowohl eine besondere Expertise als auch dafür ausgelegte Labore voraus (in Deutschland ein Labor der Sicherheitsstufe 3).\n" +
-                    "\n" +
-                    "Ein Test auf SARS-CoV-2 spezifische Antikörper im Blut/Serum kann für epidemiologische Fragestellungen sinnvoll sein. Aktuell sind diese Tests noch in der Entwicklung bzw. Zulassungsphase, sie stehen noch nicht zur Verfügung. Unabhängig davon spielen sie für die Akutdiagnostik keine Rolle, da zwischen Beginn der Symptomatik und der Nachweisbarkeit spezifischer Antikörpern ca. 7 Tage vergehen (in Einzelfällen auch mehr)."
-        ),
-        Question(
             "Question4",
-            "Wie kann ich mit Situation B umgehen?",
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et d",
-            10
-        ),
-        Question(
-            "Question5",
-            "Wie kann ich mit Situation C umgehen?",
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et d",
-            201
-        ),
-        Question(
-            "Question6",
-            "Wie kann ich mit Situation D umgehen?",
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et d",
-            144
-        ),
-        Question(
-            "Question7",
-            "Wie kann ich mit Situation E umgehen?",
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et d",
-            37
+            "Weiß man, wie viele COVID-19-Patienten im Krankenhaus behandelt werden und wie viele genesen sind?",
+            "Ich habe an verschiedenen Stellen verschiedene Informationen gelesen. Gibt es hierzu Aussagen von offizieller Seite?",
+            10,
+            answer = "Wie viele COVID-19-Fälle aktuell im Krankenhaus behandelt werden, könnte über die Meldedaten erfasst werden. Allerdings wird davon ausgegangen, dass die Daten aktuell nicht immer vollständig vorliegen (siehe \"Wie funktioniert der Meldeweg, was ist alles meldepflichtig und welche Informationen zu den Erkrankten werden ans RKI übermittelt?\") . Neben den Meldedaten können solche Informationen aber auch über andere Surveillancesysteme des RKI erfasst werden, z.B. durch die Krankenhaussurveillance schwerer akuter respiratorischer Infektionen (ICOSARI). Seit 2015 werden am RKI – zur Bewertung der Grippewelle und anderer schwer verlaufender akuter Atemwegserkrankungen – zusätzlich Informationen aus inzwischen rund 70 Sentinelkrankenhäusern ausgewertet und in den Influenza-Wochenberichten veröffentlicht. Genutzt werden dabei insbesondere Entlassungsdiagnosen von Patienten mit Grippe, Lungenentzündungen und anderen akuten Infektionen der unteren Atemwege.\n" +
+                    "\n" +
+                    "Daten darüber, ob ein Patient wieder genesen ist, werden nicht offiziell erhoben. Die Erhebung ist auch nicht gesetzlich vorgesehen. Das würde die ohnehin knappen Ressourcen des ÖGD unnötigerweise belasten, da sie dafür jeden Fall über Wochen verfolgen müssten und daraus keine weiteren Maßnahmen erfolgen. Allerdings kann man zumindest bei den Fällen, bei denen die meisten Angaben ermittelt wurden und, die keine schweren Symptome hatten, die nicht in ein Krankenhaus eingewiesen wurden, davon ausgehen, dass sie spätestens nach 14 Tagen wieder genesen sind."
         )
     )
 }
