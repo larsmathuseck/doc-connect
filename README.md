@@ -11,6 +11,10 @@ This is this Android App, used by end-users (frontend). We target doctors and ot
 ### Tech-Stack
 * Android native with Kotlin
 * Epoxy-based layout
+* ViewModels
+* Material Components
+* Coroutines
+* Navigation Components
 
 ## More
 ### WirVsVirus
