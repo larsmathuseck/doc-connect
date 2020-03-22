@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import de.lars.mathuseck.docconnect.MainActivity
 import de.lars.mathuseck.docconnect.R
+import de.lars.mathuseck.docconnect.ui.models.Logo
 import de.lars.mathuseck.docconnect.ui.models.information
 import de.lars.mathuseck.docconnect.ui.models.search
 import de.lars.mathuseck.docconnect.ui.models.title
@@ -52,11 +53,15 @@ class InformationFragment : Fragment(),
 
             information {
                 id("info_1")
+                logo(Logo.BMG)
+                author(getString(R.string.bmg))
                 title(getString(R.string.info_dummy_1_title))
                 text(getString(R.string.info_dummy_1_text))
             }
 
             information {
+                logo(Logo.RKI)
+                author(getString(R.string.rki))
                 id("info_2")
                 title(getString(R.string.info_dummy_2_title))
                 text(getString(R.string.info_dummy_2_text))
@@ -65,6 +70,8 @@ class InformationFragment : Fragment(),
 
             information {
                 id("info_3")
+                logo(Logo.RKI)
+                author(getString(R.string.rki))
                 title(getString(R.string.info_dummy_3_title))
                 text(getString(R.string.info_dummy_3_text))
 
@@ -72,6 +79,8 @@ class InformationFragment : Fragment(),
 
             information {
                 id("info_4")
+                logo(Logo.BMG)
+                author(getString(R.string.bmg))
                 title(getString(R.string.info_dummy_4_title))
                 text(getString(R.string.info_dummy_4_text))
             }
@@ -79,18 +88,24 @@ class InformationFragment : Fragment(),
 
             information {
                 id("info_5")
+                logo(Logo.BMG)
+                author(getString(R.string.bmg))
                 title(getString(R.string.info_dummy_5_title))
                 text(getString(R.string.info_dummy_5_text))
             }
 
             information {
                 id("info_6")
+                logo(Logo.BMG)
+                author(getString(R.string.bmg))
                 title(getString(R.string.info_dummy_6_title))
                 text(getString(R.string.info_dummy_6_text))
             }
 
             information {
                 id("info_7")
+                author(getString(R.string.rki))
+                logo(Logo.RKI)
                 title(getString(R.string.info_dummy_7_title))
                 text(getString(R.string.info_dummy_7_text))
             }

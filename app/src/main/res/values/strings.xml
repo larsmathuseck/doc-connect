@@ -78,4 +78,6 @@ Inzwischen stehen auch kommerziell erhältliche Testsysteme zur Verfügung.</str
     <string name="more">mehr lesen</string>
     <string name="less">weniger</string>
     <string name="credits">Entwickelt mit Team I.R.I.S für den #WirVsVirus Hackathon.</string>
+    <string name="bmg">Bundesministerium für Gesundheit</string>
+    <string name="rki">Robert Koch-Institut</string>
 </resources>
