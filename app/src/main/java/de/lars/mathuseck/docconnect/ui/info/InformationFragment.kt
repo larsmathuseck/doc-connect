@@ -1,20 +1,15 @@
 package de.lars.mathuseck.docconnect.ui.info
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import de.lars.mathuseck.docconnect.MainActivity
-import de.lars.mathuseck.docconnect.OnboardingActivity
 import de.lars.mathuseck.docconnect.R
-import de.lars.mathuseck.docconnect.ui.models.account
 import de.lars.mathuseck.docconnect.ui.models.information
 import de.lars.mathuseck.docconnect.ui.models.search
 import de.lars.mathuseck.docconnect.ui.models.title
-import de.lars.mathuseck.docconnect.utils.SharedPreferencesHelper
-import kotlinx.android.synthetic.main.fragment_account.*
 import kotlinx.android.synthetic.main.fragment_info.*
 
 class InformationFragment : Fragment(),

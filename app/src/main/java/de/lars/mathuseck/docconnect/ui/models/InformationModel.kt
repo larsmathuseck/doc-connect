@@ -27,19 +27,19 @@ abstract class InformationModel : EpoxyModelWithHolder<InformationModel.Holder>(
 
         if (expanded) {
             holder.infoTextTv.visibility = View.VISIBLE
-            holder.expandButton.text = "weniger"
+            holder.expandButton.text = holder.infoTextTv.context.getString(R.string.less)
         } else {
             holder.infoTextTv.visibility = View.GONE
-            holder.expandButton.text = "mehr"
+            holder.expandButton.text = holder.infoTextTv.context.getString(R.string.more)
         }
 
         holder.expandButton.setOnClickListener {
             if (holder.infoTextTv.visibility == View.VISIBLE) {
                 holder.infoTextTv.visibility = View.GONE
-                holder.expandButton.text = "mehr"
+                holder.expandButton.text = holder.infoTextTv.context.getString(R.string.more)
             } else {
                 holder.infoTextTv.visibility = View.VISIBLE
-                holder.expandButton.text = "weniger"
+                holder.expandButton.text = holder.infoTextTv.context.getString(R.string.less)
             }
         }
     }
