@@ -10,6 +10,7 @@ import de.lars.mathuseck.docconnect.R
 import de.lars.mathuseck.docconnect.ui.models.DropdownModel
 import de.lars.mathuseck.docconnect.ui.models.dropdown
 import de.lars.mathuseck.docconnect.ui.models.question
+import de.lars.mathuseck.docconnect.ui.models.questionAnswered
 import kotlinx.android.synthetic.main.fragment_questions.*
 
 class QuestionsFragment : Fragment(), DropdownModel.OnInteractionListener,
@@ -64,12 +65,24 @@ class QuestionsFragment : Fragment(), DropdownModel.OnInteractionListener,
                 callback(this@QuestionsFragment)
             }
             questions.forEach {
-                question {
-                    id("question_item_${it.id}")
-                    title(it.title)
-                    description(it.description)
-                    amountOfUpvotes(it.upvotes)
-                    answeredQuestion(showAnsweredQuestions)
+                if (showAnsweredQuestions) {
+                    questionAnswered {
+                        id("question_item_${it.id}")
+                        title(it.title)
+                        description(it.description)
+                        answerAuthor(it.answerAuthor)
+                        answerAuthorLogo(it.answerAuthorLogo)
+                        answerDate(it.answerDate)
+                        answer(it.answer)
+                    }
+                } else {
+                    question {
+                        id("question_item_${it.id}")
+                        title(it.title)
+                        description(it.description)
+                        amountOfUpvotes(it.upvotes)
+                        answeredQuestion(showAnsweredQuestions)
+                    }
                 }
             }
         }

@@ -12,6 +12,7 @@
     <color name="black">#000</color>
     <color name="grey">#A4A4A4</color>
     <color name="red">#C11919</color>
+    <color name="green">#45CB85</color>
     <color name="primaryTextColor">#DE000000</color>
     <color name="heartColor">#FF0025</color>
 </resources>

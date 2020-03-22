@@ -50,7 +50,9 @@ object Model {
                     "\n" +
                     "Eine Laboruntersuchung auf SARS-CoV-2 ist dann angezeigt, wenn es sich bei den Betroffenen um begründete COVID-19-Verdachtsfälle handelt, d.h. sie Krankheitszeichen haben und innerhalb der letzten 14 Tage Kontakt zu einem bestätigten COVID-19-Fall hatten und/oder sich innerhalb der letzten 14 Tage in einem Risikogebiet/einem besonders betroffenen Gebiet in Deutschland aufgehalten haben. Darüber hinaus sollte ein Test auch bei Patienten in Erwägung gezogen werden, die Krankheitszeichen haben und sich in den letzten 14 Tagen in Regionen aufgehalten haben, in denen COVID-19-Fälle vorkommen, die aber noch nicht als Risikogebiete/besonders betroffene Gebiete gelten, sowie generell bei Patienten mit Hinweis auf eine virale Pneumonie ohne Alternativdiagnose. \n" +
                     "\n" +
-                    "Tests bei asymptomatischen Personen werden nicht empfohlen."
+                    "Tests bei asymptomatischen Personen werden nicht empfohlen.",
+            answerAuthor = "Robert Koch Institut",
+            answerDate = "21.03.2020, 16:24 Uhr"
         ),
         Question(
             "Question30",
@@ -65,7 +67,10 @@ object Model {
                     "\n" +
                     "Für Forschungszwecke spielt die Virusanzucht in Zellkultursystemen eine große Rolle. Sie setzt sowohl eine besondere Expertise als auch dafür ausgelegte Labore voraus (in Deutschland ein Labor der Sicherheitsstufe 3).\n" +
                     "\n" +
-                    "Ein Test auf SARS-CoV-2 spezifische Antikörper im Blut/Serum kann für epidemiologische Fragestellungen sinnvoll sein. Aktuell sind diese Tests noch in der Entwicklung bzw. Zulassungsphase, sie stehen noch nicht zur Verfügung. Unabhängig davon spielen sie für die Akutdiagnostik keine Rolle, da zwischen Beginn der Symptomatik und der Nachweisbarkeit spezifischer Antikörpern ca. 7 Tage vergehen (in Einzelfällen auch mehr)."
+                    "Ein Test auf SARS-CoV-2 spezifische Antikörper im Blut/Serum kann für epidemiologische Fragestellungen sinnvoll sein. Aktuell sind diese Tests noch in der Entwicklung bzw. Zulassungsphase, sie stehen noch nicht zur Verfügung. Unabhängig davon spielen sie für die Akutdiagnostik keine Rolle, da zwischen Beginn der Symptomatik und der Nachweisbarkeit spezifischer Antikörpern ca. 7 Tage vergehen (in Einzelfällen auch mehr).",
+            answerAuthor = "Bundesministerium für Gesundheit",
+            answerDate = "21.03.2020, 15:53 Uhr",
+            answerAuthorLogo = R.drawable.bmg_logo
         ),
         Question(
             "Question00",
@@ -74,7 +79,9 @@ object Model {
             55,
             answer = "Bisherigen Daten zufolge ist die Symptomatik von COVID-19 bei Kindern deutlich geringer ausgeprägt ist als bei Erwachsenen. Zum tatsächlichen Beitrag von Kindern und Jugendlichen an der Transmission in der Bevölkerung liegen keine Daten vor. Aufgrund der hohen Kontagiosität des Virus und dem engen Kontakt zwischen Kindern und Jugendlichen untereinander erscheint es jedoch plausibel, dass Transmissionen stattfinden.\n" +
                     "\n" +
-                    "Schwangere scheinen der WHO und deren Daten aus China zufolge kein erhöhtes Risiko für einen schweren Krankheitsverlauf zu haben. Es gibt bislang keine Hinweise darauf, dass COVID-19 auf das Kind im Mutterleib übertragbar ist. Eine Übertragung auf das neugeborene Kind ist über den engen Kontakt und eine Tröpfcheninfektion möglich, bisher gibt es jedoch keine Nachweise von SARS-CoV-2 in der Muttermilch. Die Datenlage ist derzeit aber noch nicht ausreichend, um diese und andere Fragen zu COVID-19 in der Schwangerschaft sicher zu beantworten."
+                    "Schwangere scheinen der WHO und deren Daten aus China zufolge kein erhöhtes Risiko für einen schweren Krankheitsverlauf zu haben. Es gibt bislang keine Hinweise darauf, dass COVID-19 auf das Kind im Mutterleib übertragbar ist. Eine Übertragung auf das neugeborene Kind ist über den engen Kontakt und eine Tröpfcheninfektion möglich, bisher gibt es jedoch keine Nachweise von SARS-CoV-2 in der Muttermilch. Die Datenlage ist derzeit aber noch nicht ausreichend, um diese und andere Fragen zu COVID-19 in der Schwangerschaft sicher zu beantworten.",
+            answerAuthor = "Robert Koch Institut",
+            answerDate = "21.03.2020, 12:10 Uhr"
         ),
         Question(
             "Question10",
@@ -91,7 +98,9 @@ object Model {
                     "                    \".    Personen mit Immundefizienz, Senioren ab 70 Jahren und Personen mit chronischen Atemwegserkrankungen (z.B. Asthma oder COPD) mit Pneumovax 23\\n\" +\n" +
                     "                    \"\\n\" +\n" +
                     "                    \"Bei Arztkontakten zur Inanspruchnahme von Impfungen sollte vorher telefonisch geklärt werden, dass der Praxisbesuch ohne Kontakt zu Patienten mit Symptomen eines respiratorischen Infekts stattfinden kann und ob Impfstoffe verfügbar sind.\",\n" +
-                    "         "
+                    "         ",
+            answerAuthor = "Robert Koch Institut",
+            answerDate = "21.03.2020, 11:32 Uhr"
         ),
         Question(
             "Question40",
@@ -100,7 +109,9 @@ object Model {
             10,
             answer = "Wie viele COVID-19-Fälle aktuell im Krankenhaus behandelt werden, könnte über die Meldedaten erfasst werden. Allerdings wird davon ausgegangen, dass die Daten aktuell nicht immer vollständig vorliegen (siehe \"Wie funktioniert der Meldeweg, was ist alles meldepflichtig und welche Informationen zu den Erkrankten werden ans RKI übermittelt?\") . Neben den Meldedaten können solche Informationen aber auch über andere Surveillancesysteme des RKI erfasst werden, z.B. durch die Krankenhaussurveillance schwerer akuter respiratorischer Infektionen (ICOSARI). Seit 2015 werden am RKI – zur Bewertung der Grippewelle und anderer schwer verlaufender akuter Atemwegserkrankungen – zusätzlich Informationen aus inzwischen rund 70 Sentinelkrankenhäusern ausgewertet und in den Influenza-Wochenberichten veröffentlicht. Genutzt werden dabei insbesondere Entlassungsdiagnosen von Patienten mit Grippe, Lungenentzündungen und anderen akuten Infektionen der unteren Atemwege.\n" +
                     "\n" +
-                    "Daten darüber, ob ein Patient wieder genesen ist, werden nicht offiziell erhoben. Die Erhebung ist auch nicht gesetzlich vorgesehen. Das würde die ohnehin knappen Ressourcen des ÖGD unnötigerweise belasten, da sie dafür jeden Fall über Wochen verfolgen müssten und daraus keine weiteren Maßnahmen erfolgen. Allerdings kann man zumindest bei den Fällen, bei denen die meisten Angaben ermittelt wurden und, die keine schweren Symptome hatten, die nicht in ein Krankenhaus eingewiesen wurden, davon ausgehen, dass sie spätestens nach 14 Tagen wieder genesen sind."
+                    "Daten darüber, ob ein Patient wieder genesen ist, werden nicht offiziell erhoben. Die Erhebung ist auch nicht gesetzlich vorgesehen. Das würde die ohnehin knappen Ressourcen des ÖGD unnötigerweise belasten, da sie dafür jeden Fall über Wochen verfolgen müssten und daraus keine weiteren Maßnahmen erfolgen. Allerdings kann man zumindest bei den Fällen, bei denen die meisten Angaben ermittelt wurden und, die keine schweren Symptome hatten, die nicht in ein Krankenhaus eingewiesen wurden, davon ausgehen, dass sie spätestens nach 14 Tagen wieder genesen sind.",
+            answerAuthor = "Robert Koch Institut",
+            answerDate = "21.03.2020, 11:20 Uhr"
         )
     )
 
