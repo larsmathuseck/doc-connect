@@ -1,5 +1,6 @@
 package de.lars.mathuseck.docconnect.ui.questions
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -39,6 +40,11 @@ class MainQuestionsFragment : Fragment(),
                     else -> "Offen"
                 }
             }).attach()
+
+        questionFab.setOnClickListener {
+            val intent = Intent(requireContext(), AddQuestionActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 
