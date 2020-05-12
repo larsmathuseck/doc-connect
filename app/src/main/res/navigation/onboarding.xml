@@ -6,7 +6,7 @@
     app:startDestination="@id/onboardingStart">
     <fragment
         android:id="@+id/onboardingName"
-        android:name="de.lars.mathuseck.docconnect.ui.onboarding.OnboardingName"
+        android:name="de.iris.docconnect.ui.onboarding.OnboardingName"
         android:label="OnboardingName"
         tools:layout="@layout/onboarding_name_fragment" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/onboardingStart"
-        android:name="de.lars.mathuseck.docconnect.ui.onboarding.OnboardingStart"
+        android:name="de.iris.docconnect.ui.onboarding.OnboardingStart"
         android:label="onboarding_start_fragment"
         tools:layout="@layout/onboarding_start_fragment" >
         <action
@@ -26,7 +26,7 @@
     </fragment>
     <fragment
         android:id="@+id/onboardingLoadingFragment2"
-        android:name="de.lars.mathuseck.docconnect.ui.onboarding.OnboardingLoading"
+        android:name="de.iris.docconnect.ui.onboarding.OnboardingLoading"
         android:label="onboarding_loading_fragment"
         tools:layout="@layout/onboarding_loading_fragment" >
         <action
@@ -35,7 +35,7 @@
     </fragment>
     <fragment
         android:id="@+id/onboardingSkill"
-        android:name="de.lars.mathuseck.docconnect.ui.onboarding.OnboardingSkill"
+        android:name="de.iris.docconnect.ui.onboarding.OnboardingSkill"
         android:label="onboarding_skill_fragment"
         tools:layout="@layout/onboarding_skill_fragment" >
         <action
@@ -45,6 +45,6 @@
     </fragment>
     <activity
         android:id="@+id/mainActivity"
-        android:name="de.lars.mathuseck.docconnect.MainActivity"
+        android:name="de.iris.docconnect.MainActivity"
         android:label="MainActivity" />
 </navigation>

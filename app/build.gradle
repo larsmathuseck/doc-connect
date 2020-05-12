@@ -17,7 +17,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "de.lars.mathuseck.docconnect"
+        applicationId "de.iris.docconnect"
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
