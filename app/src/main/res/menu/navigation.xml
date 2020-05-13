@@ -9,17 +9,20 @@
     <item
         android:id="@+id/navigation_info"
         android:icon="@drawable/ic_info"
+        android:visible="false"
         android:title="@string/title_information" />
 
     <item
         android:id="@+id/navigation_questions"
         android:icon="@drawable/ic_help"
+        android:visible="false"
         android:title="@string/title_questions" />
 
 
     <item
         android:id="@+id/navigation_account"
         android:icon="@drawable/ic_person"
+        android:visible="false"
         android:title="@string/account" />
 
 </menu>

@@ -1,82 +1,62 @@
 package de.iris.docconnect.ui.models
 
 import android.view.View
-import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
 import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyHolder
 import com.airbnb.epoxy.EpoxyModelClass
 import com.airbnb.epoxy.EpoxyModelWithHolder
 import de.iris.docconnect.R
-
-enum class Logo {
-    BMG, RKI
-}
+import de.iris.docconnect.utils.getPrintableTimestamp
+import java.util.*
 
 @EpoxyModelClass(layout = R.layout.card_information)
 abstract class InformationModel : EpoxyModelWithHolder<InformationModel.Holder>() {
 
     @EpoxyAttribute
-    var text: String? = null
-
-    @EpoxyAttribute
     var title: String? = null
 
     @EpoxyAttribute
-    var expanded: Boolean = false
+    var summary: String? = null
 
     @EpoxyAttribute
     var author: String? = null
 
     @EpoxyAttribute
-    var logo: Logo? = null
+    var date: Date? = null
+
+    @EpoxyAttribute
+    var informationId: String? = null
+
+    @EpoxyAttribute
+    var callback: ((id: String) -> Unit)? = null
 
     override fun bind(holder: Holder) {
-        holder.infoTextTv.text = text
         holder.informationTitleTv.text = title
-
-        if (expanded) {
-            holder.infoTextTv.visibility = View.VISIBLE
-            holder.expandButton.text = holder.infoTextTv.context.getString(R.string.less)
-        } else {
-            holder.infoTextTv.visibility = View.GONE
-            holder.expandButton.text = holder.infoTextTv.context.getString(R.string.more)
-        }
-
-        holder.expandButton.setOnClickListener {
-            if (holder.infoTextTv.visibility == View.VISIBLE) {
-                holder.infoTextTv.visibility = View.GONE
-                holder.expandButton.text = holder.infoTextTv.context.getString(R.string.more)
-            } else {
-                holder.infoTextTv.visibility = View.VISIBLE
-                holder.expandButton.text = holder.infoTextTv.context.getString(R.string.less)
-            }
-        }
-
+        holder.summaryTv.text = summary
+        holder.dateTv.text = getPrintableTimestamp(date)
         holder.authorTv.text = author ?: ""
-
-        when (logo) {
-            Logo.BMG -> holder.infoLogoIV.setImageDrawable(holder.infoLogoIV.context.getDrawable(R.drawable.bmg_logo))
-            Logo.RKI -> holder.infoLogoIV.setImageDrawable(holder.infoLogoIV.context.getDrawable(R.drawable.logo_rki))
-            null -> holder.infoLogoIV.setImageDrawable(holder.infoLogoIV.context.getDrawable(R.drawable.bmg_logo))
+        holder.cardView.setOnClickListener {
+            informationId?.let {
+                callback?.invoke(it)
+            }
         }
     }
 
     class Holder : EpoxyHolder() {
 
+        lateinit var cardView: View
         lateinit var informationTitleTv: TextView
-        lateinit var infoTextTv: TextView
-        lateinit var expandButton: Button
-        lateinit var infoLogoIV: ImageView
+        lateinit var summaryTv: TextView
+        lateinit var dateTv: TextView
         lateinit var authorTv: TextView
 
         override fun bindView(itemView: View) {
-            authorTv = itemView.findViewById(R.id.authorTv)
-            expandButton = itemView.findViewById(R.id.expandButton)
-            infoTextTv = itemView.findViewById(R.id.infoTextTv)
+            cardView = itemView.findViewById(R.id.informationCv)
             informationTitleTv = itemView.findViewById(R.id.informationTitleTv)
-            infoLogoIV = itemView.findViewById(R.id.infoLogoIV)
+            summaryTv = itemView.findViewById(R.id.informationSummaryTv)
+            dateTv = itemView.findViewById(R.id.informationDateTv)
+            authorTv = itemView.findViewById(R.id.authorTv)
         }
     }
 
